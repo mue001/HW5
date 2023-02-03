@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="main.js"></script>
+
+    <title>Your Color Library</title>
+</head>
+<body>
+    <!-- ======================================================================================== -->
+    
+    <!-- //====================================== -->
+    <div data-role="page" id="home">
+
+        <!-- header --> 
+        <div data-role="header" data-theme='b'>
+            <h2>Color Library - Home</h2>
+            <div data-role="navbar" data-theme='b'>
+                <ul>
+                <li><a href="#home">Home Page</a></li>
+                <li><a href="#pickColor">Pick Color</a></li>
+                <li><a href="#organizeColor">Organize Color</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>  
+        <!-- //======================================
+
+        //====================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='e'>
+            <h2 id="title">Create Your Color Library</h2>
+            <img src="images/color_library.png" alt="an image of color library">
+        </div>
+        <!-- //======================================
+
+        //====================================== -->
+          <!-- notes footer --> 
+          <div data-role="footer" data-theme='b'>
+            <h3>Copyrigtht 2023 by Hoa Vo & Misako Ueshima</h3>
+        </div>
+        <!-- //====================================== -->
+    </div>
+   <!-- ======================================================================================== -->
+
+
+   <!-- ======================================================================================== -->
+    <div data-role="page" id="pickColor">
+        
+        <!-- =================================== -->
+        <!-- header --> 
+        <div data-role="header" data-theme='b'>
+            <h2>Color Library - Pick Color</h2>
+
+            <div data-role="navbar" data-theme='b'>
+                <ul>
+                 <li><a href="#home">Home Page</a></li>
+                 <li><a href="#pickColor">Pick Color</a></li>
+                 <li><a href="#organizeColor">Organize Color</a></li>
+                </ul>
+            </div><!-- /navbar -->
+
+        </div>
+        <!-- =================================== -->
+
+        <!-- =================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='e'>
+            <h2>Hit click button to create a random color</h2>
+            <button id="colorbtn">Click!</button>
+        </div>
+        <div id="colorList">
+            <div id="colorItems"></div>
+        </div>
+        <!-- =================================== -->
+
+
+        <!-- =================================== -->
+        <!-- notes footer --> 
+        <div data-role="footer" data-theme='b'>
+            <h3>Copyrigtht 2023 by Hoa Vo & Misako Ueshima</h3>
+        </div>
+        <!-- =================================== -->
+    </div>
+     <!-- ======================================================================================== -->
+
+
+    
+      <!-- ======================================================================================== -->
+    <div data-role="page" id="organizeColor">
+        
+          <!-- =================================== -->
+        <!-- header --> 
+        <div data-role="header" data-theme='b'>
+            <h2>Color Library - Organize Color</h2>
+       
+
+            <div data-role="navbar" data-theme='b'>
+                <ul>
+                <li><a href="#home">Home Page</a></li>
+                <li><a href="#pickColor">Pick Color</a></li>
+                <li><a href="#organizeColor">Organize Color</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+           <!-- =================================== -->
+
+          <!-- =================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='e'>
+            <div id="organizeContainer">
+                <div id="organizeItems"></div>
+            </div>
+        </div>
+           <!-- =================================== -->
+
+           <!-- =================================== -->
+        <!-- notes footer --> 
+        <div data-role="footer" data-theme='b'>
+            <h3>Copyrigtht 2023 by Hoa Vo & Misako Ueshima</h3>
+        </div>
+        <!-- =================================== -->
+
+    </div>
+     <!-- ======================================================================================== -->
+    
+    
+</body>
+</html>
