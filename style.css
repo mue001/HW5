@@ -25,12 +25,14 @@
 button{
     /* font-family: 'Montserrat', sans-serif; */
     letter-spacing: 0.1rem;
+    width: 40%;
 }
 
-h2{
+h2, h3{
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.2rem;
-    color: gray;
+    font-weight: bold;
+    color:Red;
     text-align: center;
 }
 

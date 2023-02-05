@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% comment %} <link rel="stylesheet" href="style.css"/> {% endcomment %}
+
+    <link rel="stylesheet" href="themes/jenny-modified-themes.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
-    <link rel="stylesheet" href="style.css"/>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="library.js"></script>
     <script src="main.js"></script>
 
     <title>RGB color creator</title>
@@ -15,13 +20,13 @@
 <body>
     <!-- ======================================================================================== -->
     
-    <!-- //====================================== -->
-    <div data-role="page" id="home">
+    <!-- //=================   HOME PAGE  ===================== -->
+    <div data-role="page" id="home" data-theme="a">
 
         <!-- header --> 
-        <div data-role="header" data-theme='b'>
-            <h2>RGB color creator - Home</h2>
-            <div data-role="navbar" id="navbar" data-theme='b'>
+        <div data-role="header" data-theme="a">
+            <h2 class="ui-title">RGB color creator - Home</h2>
+            <div data-role="navbar" id="navbar" data-theme="a">
                 <ul>
                 <li><a href="#home">Home Page</a></li>
                 <li><a href="#colorMaker">Color Maker</a></li>
@@ -33,7 +38,7 @@
 
         //====================================== -->
         <!-- content -->
-        <div data-role="content" data-theme='e'>
+        <div data-role="content" data-theme="a">
             <div id="homediv">
                 <h2 id="title">Create Your Color Library</h2>
                 <img src="images/color_library.png" alt="an image of color library">
@@ -43,23 +48,23 @@
 
         //====================================== -->
           <!-- notes footer --> 
-          <div data-role="footer" id="footer" data-theme='b'>
+          <div data-role="footer" id="footer" data-theme="a">
             <h3>Copyrigtht 2023 by Hoa Vo & Misako Ueshima</h3>
         </div>
         <!-- //====================================== -->
     </div>
-   <!-- ======================================================================================== -->
+   <!-- ==================================  HOME PAGE END   ================================================= -->
 
 
-   <!-- ======================================================================================== -->
+   <!-- =================================  COLOR MAKER PAGE  ================================================= -->
     <div data-role="page" id="colorMaker">
         
         <!-- =================================== -->
         <!-- header --> 
-        <div data-role="header" data-theme='b'>
+        <div data-role="header">
             <h2>RGB color creator - Create Color</h2>
 
-            <div data-role="navbar" id="navbar" data-theme='b'>
+            <div data-role="navbar" id="navbar">
                 <ul>
                  <li><a href="#home">Home Page</a></li>
                  <li><a href="#colorMaker">Color Maker</a></li>
@@ -72,14 +77,14 @@
 
         <!-- =================================== -->
         <!-- content -->
-        <div data-role="content" data-theme='e'>
+        <div data-role="content" data-theme="c">
             <h2>Hit click button to create a random color</h2>
             <button id="colorbtn">Click!</button>
         </div>
         <div id="colorList">
             <div id="colorItems"></div>
         </div>
-        <div id="newestColorList">
+        <div id="newestColorList"data-theme="c">
                 <button id="newbtn">Display the newest color list</button>
                 <div id="newestColorItems"></div>
         </div>
@@ -88,25 +93,25 @@
 
         <!-- =================================== -->
         <!-- notes footer --> 
-        <div data-role="footer" id="footer" data-theme='b'>
+        <div data-role="footer" id="footer">
             <h3>Copyrigtht 2023 by Hoa Vo & Misako Ueshima</h3>
         </div>
         <!-- =================================== -->
     </div>
-     <!-- ======================================================================================== -->
+     <!-- ============================  END COLOR MAKER PAGE  ============================================== -->
 
 
     
-      <!-- ======================================================================================== -->
-    <div data-role="page" id="colorLibrary">
+      <!-- ==============================    COLOR LIBRARY PAGE  =============================================== -->
+    <div data-role="page" id="colorLibrary" data-theme="a">
         
           <!-- =================================== -->
         <!-- header --> 
-        <div data-role="header" data-theme='b'>
+        <div data-role="header" data-theme="c">
             <h2>RGB color creator - Color Library</h2>
        
 
-            <div data-role="navbar" id="navbar" data-theme='b'>
+            <div data-role="navbar" id="navbar" data-theme="c">
                 <ul>
                 <li><a href="#home">Home Page</a></li>
                 <li><a href="#colorMaker">Color Maker</a></li>
@@ -118,8 +123,13 @@
 
           <!-- =================================== -->
         <!-- content -->
-        <div data-role="content" data-theme='e'>
+        <div data-role="content" data-theme="c">
             <div id="libraryContainer">
+                <div id = "message">
+                    <h2> Valid R, G, B input 0 - 255 </h2>
+                    <h3 id="LC-message"></h3>
+                </div>
+
                 <div id="listItems"></div>
             </div>
         </div>
@@ -127,7 +137,7 @@
 
            <!-- =================================== -->
         <!-- notes footer --> 
-        <div data-role="footer" id="footer" data-theme='b'>
+        <div data-role="footer" id="footer" data-theme="c">
             <h3>Copyrigtht 2023 by Hoa Vo & Misako Ueshima</h3>
         </div>
         <!-- =================================== -->
