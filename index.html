@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% comment %} <link rel="stylesheet" href="style.css"/> {% endcomment %}
+    {% comment %}
+    <link rel="stylesheet" href="style.css" /> {% endcomment %}
 
     <link rel="stylesheet" href="themes/jenny-modified-themes.min.css" />
     <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="library.js"></script>
@@ -17,134 +19,197 @@
 
     <title>RGB color creator</title>
 </head>
+
 <body>
-    <!-- ======================================================================================== -->
-    
-    <!-- //=================   HOME PAGE  ===================== -->
+
+
+    <!-- =================================  HOME  ================================================= -->
     <div data-role="page" id="home" data-theme="a">
 
-        <!-- header --> 
+        <!-- header -->
         <div data-role="header" data-theme="a">
             <h2 class="ui-title">RGB color creator - Home</h2>
             <div data-role="navbar" id="navbar" data-theme="a">
                 <ul>
-                <li><a href="#home">Home Page</a></li>
-                <li><a href="#colorMaker">Color Maker</a></li>
-                <li><a href="#colorLibrary">Color Library</a></li>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#colorMaker">Color Maker</a></li>
+                    <li><a href="#colorLibrary">Color Library</a></li>
                 </ul>
             </div><!-- /navbar -->
-        </div>  
-        <!-- //======================================
+        </div>
 
-        //====================================== -->
-        <!-- content -->
+
+        <!-- page content -->
         <div data-role="content" data-theme="a">
             <div id="homediv">
                 <h2 id="title">Create Your Color Library</h2>
                 <img src="images/color_library.png" alt="an image of color library">
             </div>
         </div>
-        <!-- //======================================
 
-        //====================================== -->
-          <!-- notes footer --> 
-          <div data-role="footer" id="footer" data-theme="a">
+        <!-- page footer -->
+        <div data-role="footer" id="footer" data-theme="a">
             <h3>Copyrigtht 2023 by Hoa Vo & Misako Ueshima</h3>
         </div>
-        <!-- //====================================== -->
+
     </div>
-   <!-- ==================================  HOME PAGE END   ================================================= -->
+    <!-- ==================================  HOME PAGE END   ================================================= -->
 
 
-   <!-- =================================  COLOR MAKER PAGE  ================================================= -->
+
+
+
+    <!-- =================================  COLOR MAKER PAGE  ================================================= -->
     <div data-role="page" id="colorMaker">
-        
-        <!-- =================================== -->
-        <!-- header --> 
+
+        <!-- header -->
         <div data-role="header">
             <h2>RGB color creator - Create Color</h2>
 
             <div data-role="navbar" id="navbar">
                 <ul>
-                 <li><a href="#home">Home Page</a></li>
-                 <li><a href="#colorMaker">Color Maker</a></li>
-                 <li><a href="#colorLibrary">Color Library</a></li>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#colorMaker">Color Maker</a></li>
+                    <li><a href="#colorLibrary">Color Library</a></li>
                 </ul>
             </div><!-- /navbar -->
-
         </div>
-        <!-- =================================== -->
 
-        <!-- =================================== -->
+
         <!-- content -->
         <div data-role="content" data-theme="c">
-            <h2>Hit click button to create a random color</h2>
-            <button id="colorbtn">Click!</button>
-        </div>
-        <div id="colorList">
-            <div id="colorItems"></div>
-        </div>
-        <div id="newestColorList"data-theme="c">
-                <button id="newbtn">Display the newest color list</button>
-                <div id="newestColorItems"></div>
-        </div>
-        <!-- =================================== -->
+            <div id="colorMakerMessage">
+                <h2>Hit click button to create a random color</h2>
+                <button id="colorbtn">Click!</button>
+            </div>
 
+            <div id="colorList">
+                <div id="colorItems"></div>
+            </div>
+        </div>
 
-        <!-- =================================== -->
-        <!-- notes footer --> 
+        <!-- page footer -->
         <div data-role="footer" id="footer">
             <h3>Copyrigtht 2023 by Hoa Vo & Misako Ueshima</h3>
         </div>
-        <!-- =================================== -->
+
+
     </div>
-     <!-- ============================  END COLOR MAKER PAGE  ============================================== -->
+    <!-- ============================  END COLOR MAKER PAGE  ============================================== -->
 
 
-    
-      <!-- ==============================    COLOR LIBRARY PAGE  =============================================== -->
-    <div data-role="page" id="colorLibrary" data-theme="a">
-        
-          <!-- =================================== -->
-        <!-- header --> 
-        <div data-role="header" data-theme="c">
-            <h2>RGB color creator - Color Library</h2>
-       
 
-            <div data-role="navbar" id="navbar" data-theme="c">
+
+
+    <!-- =================================  DETAIL PAGE  ================================================= -->
+    <div data-role="page" id="detail">
+
+
+        <!-- header -->
+        <div data-role="header">
+            <h2>Detail page</h2>
+            <div data-role="navbar" id="navbar">
                 <ul>
-                <li><a href="#home">Home Page</a></li>
-                <li><a href="#colorMaker">Color Maker</a></li>
-                <li><a href="#colorLibrary">Color Library</a></li>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#colorMaker">Color Maker</a></li>
+                    <li><a href="#colorLibrary">Color Library</a></li>
                 </ul>
             </div><!-- /navbar -->
         </div>
-           <!-- =================================== -->
 
-          <!-- =================================== -->
+
         <!-- content -->
         <div data-role="content" data-theme="c">
-            <div id="libraryContainer">
-                <div id = "message">
-                    <h2> Valid R, G, B input 0 - 255 </h2>
-                    <h3 id="LC-message"></h3>
+            <div id="detailContainer">
+                <h2>Color item's details</h2>
+
+                <div id="detailLeft">
+                    <div id="colorItemDetail">
+                        <p id="colorItemId"></p>
+                        <input id="inputR" name="RGB" type="number">
+                        <input id="inputG" name="RGB" type="number">
+                        <input id="inputB" name="RGB" type="number">
+                        <button id="changebtn"></button>
+                    </div>
                 </div>
 
-                <div id="listItems"></div>
+                <div id="detailRight">
+                    <div id="colorPaletteSuggestions">
+                        <!-- create fav btn for each div in js -->
+                        <div id="monochromatic"></div>
+                        <div id="triad"></div>
+                        <div id="complementary"></div>
+                    </div>
+                </div>
+
+                <button id="backListbtn">Back to the list</button>
             </div>
         </div>
-           <!-- =================================== -->
 
-           <!-- =================================== -->
-        <!-- notes footer --> 
-        <div data-role="footer" id="footer" data-theme="c">
+
+        <!-- page footer -->
+        <div data-role="footer" id="footer">
             <h3>Copyrigtht 2023 by Hoa Vo & Misako Ueshima</h3>
         </div>
-        <!-- =================================== -->
+
 
     </div>
-     <!-- ======================================================================================== -->
-    
-    
+    <!-- ============================  END DETAIL PAGE  ============================================== -->
+
+
+
+
+
+    <!-- ==============================    COLOR LIBRARY PAGE  =============================================== -->
+    <div data-role="page" id="colorLibrary" data-theme="a">
+
+
+        <!-- header -->
+        <div data-role="header" data-theme="c">
+            <h2>RGB color creator - Color Library</h2>
+
+
+            <div data-role="navbar" id="navbar" data-theme="c">
+                <ul>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#colorMaker">Color Maker</a></li>
+                    <li><a href="#colorLibrary">Color Library</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+
+
+        <!-- content -->
+        <div data-role="content" data-theme="c">
+
+            <div id="colorLibraryContainer">
+
+                <div id="libraryContainer">
+                    <div id="message">
+                        <h2> Valid R, G, B input 0 - 255 </h2>
+                        <h3 id="LC-message"></h3>
+                    </div>
+                    <div id="listItems"></div>
+                </div>
+
+                <div id="librarybtnContainer">
+                    <input type="button" value="Sort By Hue" id="sortHuebtn" data-inline="true" />
+                    <input type="button" value="List Favorite Palettes" id="listFavbtn" data-inline="true" />
+                    <input type="button" value="Show all colors" id="showAllbtn" data-inline="true" />
+                </div>
+                
+            </div>
+
+            <!-- notes footer -->
+            <div data-role="footer" id="footer" data-theme="c">
+                <h3>Copyrigtht 2023 by Hoa Vo & Misako Ueshima</h3>
+            </div>
+
+
+        </div>
+        <!-- ======================================================================================== -->
+
+
 </body>
+
 </html>
